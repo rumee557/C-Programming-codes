@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float weight[1000], avg,sum; /*weight array stores the input weights of elephants and avg gives the average weight*/
+    int n, i; /*n is the number of data to enter*/
+    printf("Enter the number of data you want to enter:\t");
+    scanf("%d",&n);
+    for(i=1;i<n+1;i++)
+    {
+        printf("Enter the data %d:\t",i);
+        scanf("%f",&weight[i]);
+    }
+    sum=0; /*initializing sum to 0*/
+    for (i=0;i<=n;i++)
+    {
+        sum=sum+weight[i];
+    }
+    printf("Average of the weights of elephants is %f",sum/n);
+}

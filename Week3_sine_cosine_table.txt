@@ -1,0 +1,24 @@
+/*Table of Sine and Cosine*/
+#include<stdio.h>
+#include<math.h>
+void table_sine_cosine(float interval)
+{
+    float i=0;
+    printf("Table of sine\n");
+    for(i=interval;i<=1;i=i+interval) /*not starting from i=0 because of the limit (0,1)*/
+    {
+        printf("sin(%f)=%lf\n",i,sin(i));
+    }
+    printf("\n\n\nTable of cosine\n");
+    for(i=interval;i<=1;i=i+interval)
+    {
+        printf("cos(%f)=%lf\n",i,cos(i));
+    }
+}
+int main(void)
+{
+    float a, interval;
+    printf("enter the interval for the table:");
+    scanf("%f",&interval);
+    table_sine_cosine(interval);
+}

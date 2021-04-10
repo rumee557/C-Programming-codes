@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+ int main(void) {
+    double x,sinx;
+    printf("\nEnter value of x between (0,1):");
+    scanf("%lf",&x);
+    sinx=sin(x);
+    printf("\nsinx=%lf\n", sinx);
+    return 0;
+ }
