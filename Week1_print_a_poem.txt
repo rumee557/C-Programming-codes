@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(void)
+{   
+    printf("Invictus\nOut of the night that covers me,\nBlack as the pit from pole to pole,\nI thank whatever gods may be\nFor my unconquerable soul.");
+    return 0;
+}    
